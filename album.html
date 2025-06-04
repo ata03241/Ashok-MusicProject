@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Albums</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/album.css">
+
+</head>
+
+<body>
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area" style="background-color: black; margin-top: -20px;">
+        <!-- Navbar Area -->
+        <div class="oneMusic-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="oneMusicNav">
+
+                        <!-- Nav brand -->
+                        <a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="album.html">Albums</a></li>
+                                    <li><a href="artist.html">Artist</a></li>
+                                    <li><a href="musicgroup.html">Music</a></li>
+                                    <li><a href="event.html">Events</a></li>
+                                </ul>
+
+                                <!-- Login/Register & Cart Button -->
+                                <div class="login-register-cart-button d-flex align-items-center">
+                                    <!-- Login/Register -->
+                                      <div class="login-register-btn mr-50">
+                                        <a href="#" id="loginBtn">Ashok Tamang</a>
+                                    </div>
+
+                                    <!-- Cart Button -->
+                                    <div class="cart-btn">
+                                        <p><span class="icon-shopping-cart"></span> <span class="quantity">1</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Nav End -->
+
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="breadcumb-area bg-img bg-overlay" style="background-image: url(img/bg-img/breadcumb3.jpg);">
+        <div class="bradcumbContent" ">
+            <p>See what’s new</p>
+            <h2>Albums Collection</h2>
+            <p style=" margin-top: 2%;">Total Albums: <span id="total-albums">0</span></p>
+            <p id="count-artists"></p>
+        </div>
+    </section>
+
+    <section class="album-area section-padding-100-0">
+        <input type="text" id="search" placeholder="Search for albums...">
+    </section>
+
+    <section class="album-catagory section-padding-100-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="browse-by-catagories catagory-menu d-flex flex-wrap align-items-center mb-70">
+                        <a href="#" data-filter="*">Browse All</a>
+                        <a href="#" data-filter=".a" class="active">A</a>
+                        <a href="#" data-filter=".b">B</a>
+                        <a href="#" data-filter=".c">C</a>
+                        <a href="#" data-filter=".d">D</a>
+                        <a href="#" data-filter=".e">E</a>
+                        <a href="#" data-filter=".f">F</a>
+                        <a href="#" data-filter=".g">G</a>
+                        <a href="#" data-filter=".h">H</a>
+                        <a href="#" data-filter=".i">I</a>
+                        <a href="#" data-filter=".j">J</a>
+                        <a href="#" data-filter=".k">K</a>
+                        <a href="#" data-filter=".l">L</a>
+                        <a href="#" data-filter=".m">M</a>
+                        <a href="#" data-filter=".n">N</a>
+                        <a href="#" data-filter=".o">O</a>
+                        <a href="#" data-filter=".p">P</a>
+                        <a href="#" data-filter=".q">Q</a>
+                        <a href="#" data-filter=".r">R</a>
+                        <a href="#" data-filter=".s">S</a>
+                        <a href="#" data-filter=".t">T</a>
+                        <a href="#" data-filter=".u">U</a>
+                        <a href="#" data-filter=".v">V</a>
+                        <a href="#" data-filter=".w">W</a>
+                        <a href="#" data-filter=".x">X</a>
+                        <a href="#" data-filter=".y">Y</a>
+                        <a href="#" data-filter=".z">Z</a>
+                        <a href="#" data-filter=".number">0-9</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row oneMusic-albums">
+                <!-- Single Album -->
+                <div class="col-12 col-sm-4 col-md-3 col-lg-2 single-album-item t c p">
+                    <div class="single-album">
+                        <div class="album-info">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navigation-arrows" style="position: relative; margin-top: 50px; display: flex; justify-content: space-between; align-items: center;">
+                <button id="PreviousButton" class="btn btn-primary">&#8592;</button>
+                <button id="NextButton" class="btn btn-primary">&#8594;</button>
+            </div>
+        </div>
+
+
+    </section>
+
+    <div class="one-music-songs-area" style="margin-top: 60vh;">
+        <div class="container">
+            <div class="row">
+
+                <!-- Single Song Area -->
+                <div class="col-12">
+                    <div class="single-song-area mb-30 d-flex flex-wrap align-items-end">
+                        <div class="song-thumbnail">
+                            <img src="img/album/10.jpg" alt="">
+                        </div>
+                        <div class="song-play-area">
+                            <div class="song-name">
+                                <p>01. Main Hit Song</p>
+                            </div>
+                            <audio preload="auto" controls>
+                                <source src="audio/Tyler, The Creator - See You Again (Audio) ft. Kali Uchis.mp3">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Song Area -->
+                <div class="col-12">
+                    <div class="single-song-area mb-30 d-flex flex-wrap align-items-end">
+                        <div class="song-thumbnail">
+                            <img src="img/album/1.jpg" alt="">
+                        </div>
+                        <div class="song-play-area">
+                            <div class="song-name">
+                                <p>01. Main Hit Song</p>
+                            </div>
+                            <audio preload="auto" controls>
+                                <source src="audio/ACDC - Highway to Hell (Live At River Plate, December 2009).mp3">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Song Area -->
+                <div class="col-12">
+                    <div class="single-song-area mb-30 d-flex flex-wrap align-items-end">
+                        <div class="song-thumbnail">
+                            <img src="img/album/17.jpg" alt="">
+                        </div>
+                        <div class="song-play-area">
+                            <div class="song-name">
+                                <p>01. Main Hit Song</p>
+                            </div>
+                            <audio preload="auto" controls>
+                                <source src="audio/2Pac - All Eyez On Me.mp3">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Song Area -->
+                <div class="col-12">
+                    <div class="single-song-area mb-30 d-flex flex-wrap align-items-end">
+                        <div class="song-thumbnail">
+                            <img src="img/album/13.jpg" alt="">
+                        </div>
+                        <div class="song-play-area">
+                            <div class="song-name">
+                                <p>01. Main Hit Song</p>
+                            </div>
+                            <audio preload="auto" controls>
+                                <source src="audio/Lil Baby - In A Minute (Official Video).mp3">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ##### Add Area Start ##### -->
+
+      <section class="contact-area section-padding-100 bg-img bg-overlay bg-fixed has-bg-img" style="background-image: url(img/bg-img/bg-2.jpg); margin-top: 8%;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading white">
+                        <p>See what’s new</p>
+                        <h2>Get In Touch</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <!-- Contact Form Area -->
+                    <div class="contact-form-area">
+                        <form action="#" method="post">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="name" placeholder="Name">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" id="email" placeholder="E-mail">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <textarea name="message" class="form-control" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button class="btn oneMusic-btn mt-30" type="submit">Send <i class="fa fa-angle-double-right"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <footer class="footer-area"
+        style="position: fixed; bottom: 0; width: 100%; background-color: #000; color: #fff; z-index: 1000;"></footer>
+
+    </footer> -->
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+
+    <script type="module" src="./js/Javascript/index.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+
+
+</body>
+
+</html>

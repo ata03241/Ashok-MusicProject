@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Music Groups Details</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/album.css">
+    <link rel="stylesheet" href="css/Artist.css">
+
+</head>
+
+<body style="background-image: url(img/bg-img/bg-4.jpg); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area" style="background-color: black; margin-top: -20px;">
+        <!-- Navbar Area -->
+        <div class="oneMusic-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="oneMusicNav">
+
+                        <!-- Nav brand -->
+                        <a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="album.html">Albums</a></li>
+                                    <li><a href="artist.html">Artist</a></li>
+                                    <li><a href="musicgroup.html">Music Groups</a></li>
+                                    <li><a href="event.html">Events</a></li>
+                                </ul>
+
+                                <!-- Login/Register & Cart Button -->
+                                <div class="login-register-cart-button d-flex align-items-center">
+                                    <!-- Login/Register -->
+
+
+                                    <!-- Cart Button -->
+                                    <div class="cart-btn">
+                                        <p><span class="icon-shopping-cart"></span> <span class="quantity">1</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Nav End -->
+
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!--go back icon-->
+    
+
+    <section style="margin-top: 140px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <a href="musicgroup.html" class="btn btn-primary mt-3" style="background-color: #000; color: #fff; border: 1px solid #fff;">
+                        <i class="fa fa-arrow-left"></i> Back
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container px-4 py-4" id="view-item">
+            <div class="d-flex justify-content-between align-items-center pb-2 border-bottom mb-4">
+                <h2 class="mb-0">Music Group Details</h2>
+                 <div class="col-sm-5" style="background: white; height: 3vh;">
+                    <span id="musicgroupID" style="font-size: 1.2rem;" >123</span> <br>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-7">
+                    <form class="needs-validation" novalidate>
+                        <div class="row g-3 mb-3">
+                            <div class="col-sm-6">
+                                <h4 for="groupName" class="form-label fw-semibold">Group Name</h4>
+                                <div style="background: white; height: 3.5vh; border-radius: 2px;">
+                                    <span id="groupName" style="font-size: 1.2rem; padding: 10px;" >AC/DC</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <h4 for="genre" class="form-label fw-semibold">Genre</h4>
+                                <div style="background: white; height: 3.5vh; border-radius: 2px;">
+                                    <span id="groupGenre" style="font-size: 1.2rem; padding: 10px;" >Rock</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <h4 for="established" class="form-label fw-semibold" style="margin-top: 12px;">Established Year</h4>
+                                <div style="background: white; height: 3.5vh; border-radius: 2px;">
+                                    <span id="groupEstablished" style="font-size: 1.2rem; padding: 10px;" >1970</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <h4 class="fw-semibold mb-3">Artists</h4>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-sm mb-0" id="artistsName">
+                                    <thead class="table-light">
+                                        <tr>
+                                            <th scope="col" style="font-size: 1.2rem;">Name</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="fw-semibold mb-3">Albums</h4>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-sm mb-0" id="albumsName">
+                                    <thead class="table-light">
+                                        <tr>
+                                            <th scope="col"  style="font-size: 1.2rem;">Name</th>
+                                            <th scope="col"  style="font-size: 1.2rem;">Year</th>
+                                            <th scope="col"  style="font-size: 1.2rem;">Sold Copies</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="mt-4 d-flex justify-content-end gap-2">
+                            <button type="button" class="btn m-2" style="background-color: #000; color: #fff; border: 1px solid #fff;">Edit</button>
+                            <button type="button" id="deleteButton" class="btn m-2" style="background-color: #fff; color: #000; border: 1px solid #000;">Delete</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="albumsNam">
+
+    </div>
+
+    
+
+    <!-- ##### Add Area Start ##### -->
+
+
+    <!-- <footer class="footer-area"
+        style="position: fixed; bottom: 0; width: 100%; background-color: #000; color: #fff; z-index: 1000;"></footer>
+
+    </footer> -->
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+
+   
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+
+    <script type="module" src="js/Javascript/details.js"></script>
+
+
+</body>
+
+</html>

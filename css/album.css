@@ -1,0 +1,41 @@
+#search {
+    width: 40%;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin: 0 auto; /* Center horizontally */
+    display: block; 
+}
+
+#PreviousButton {
+    margin-left: -120px;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: blue;
+}
+
+#PreviousButton:hover {
+    background-color: #e0e0e0;
+    border-color: #999;
+    transform: scale(1.1);
+}
+
+#NextButton {
+    margin-right: -140px;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: blue;
+}
+
+#NextButton:hover {
+    background-color: #e0e0e0;
+    border-color: #999;
+    transform: scale(1.1);
+}

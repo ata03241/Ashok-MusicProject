@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Music Groups</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/album.css">
+    <link rel="stylesheet" href="css/Artist.css">
+
+</head>
+
+<body>
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area" style="background-color: black; margin-top: -20px;">
+        <!-- Navbar Area -->
+        <div class="oneMusic-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="oneMusicNav">
+
+                        <!-- Nav brand -->
+                        <a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="album.html">Albums</a></li>
+                                    <li><a href="artist.html">Artist</a></li>
+                                    <li><a href="musicgroup.html">Music</a></li>
+                                    <li><a href="event.html">Events</a></li>
+                                </ul>
+
+                                <!-- Login/Register & Cart Button -->
+                                <div class="login-register-cart-button d-flex align-items-center">
+                                    <!-- Login/Register -->
+                                     <div class="login-register-btn mr-50">
+                                        <a href="#" id="loginBtn">Ashok Tamang</a>
+                                    </div>
+
+                                    <!-- Cart Button -->
+                                    <div class="cart-btn">
+                                        <p><span class="icon-shopping-cart"></span> <span class="quantity">1</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Nav End -->
+
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="breadcumb-area bg-img bg-overlay" style="background-image: url(img/img/biggie.jpg);">
+        <div class="bradcumbContent">
+            <p>Discover the Music Groups</p>
+            <h2>Top Artists/Albums</h2>
+            <p style=" margin-top: 2%;">Total Music Groups: <span id="groups">0</span></p>
+        </div>
+    </section>
+
+    <section class="album-area section-padding-100-0">
+        <input type="text" id="search" placeholder="Search for artist...">
+        <!--total number of search value-->
+        <p style="margin-top: 2%;">Total Search Results: <span id="searchresult">0</span></p>
+    </section>
+
+    <!-- //section for music groupd -->
+    <section class="music-groups-section" style="margin: 40px 0;">
+        <div class="container">
+            <!-- Navigation Arrows -->
+            <div class="d-flex justify-content-end mb-3">
+                <button class="btn btn-light btn-sm me-2" id="prevbtn" title="Previous" style="font-size: 1.5rem; line-height: 1;">
+                    &#8592;
+                </button>
+                <button class="btn btn-light btn-sm" id="nextbtn" title="Next" style="font-size: 1.5rem; line-height: 1;">
+                    &#8594;
+                </button>
+            </div>
+            <!-- Music Groups List -->
+            <div id="musicgrouplist">
+                <ul id="music-groups-list" class="list-group">
+                    <!-- Example static items, replace with dynamic content -->
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <!--list comes here-->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- ##### Add Area Start ##### -->
+
+    <section class="contact-area section-padding-100 bg-img bg-overlay bg-fixed has-bg-img"
+        style="background-image: url(img/bg-img/bg-2.jpg); margin-top: 8%;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading white">
+                        <p>See what’s new</p>
+                        <h2>Get In Touch</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <!-- Contact Form Area -->
+                    <div class="contact-form-area">
+                        <form action="#" method="post">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="name" placeholder="Name">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" id="email" placeholder="E-mail">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <textarea name="message" class="form-control" id="message" cols="30" rows="10"
+                                            placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button class="btn oneMusic-btn mt-30" type="submit">Send <i
+                                            class="fa fa-angle-double-right"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <footer class="footer-area"
+        style="position: fixed; bottom: 0; width: 100%; background-color: #000; color: #fff; z-index: 1000;"></footer>
+
+    </footer> -->
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+
+    <script type="module" src="js/Javascript/musicgroups.js "></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+
+
+</body>
+
+</html>
