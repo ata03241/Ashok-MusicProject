@@ -103,6 +103,8 @@ import musicService from './musicservice.js';
         const searchResult = document.querySelector("#searchresult");
         searchResult.innerHTML = `Total number of search results: ${groupsResult.totalCount}`;
         renderGroupList(groupsResult.pageItems);
+
+        
     });
 
 
